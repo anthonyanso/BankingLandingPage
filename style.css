@@ -35,12 +35,14 @@ body {
     line-height: 1.6;
     color: var(--text-dark);
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 /* Typography */
@@ -226,7 +228,7 @@ p {
     display: flex;
     align-items: center;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    padding-top: 80px;
+    padding: 120px 0 80px;
     position: relative;
     overflow: hidden;
 }
@@ -324,7 +326,7 @@ p {
 
 /* Section Styles */
 section {
-    padding: 5rem 0;
+    padding: 6rem 0;
 }
 
 .section-header {
@@ -607,7 +609,7 @@ section {
 .page-header {
     background: var(--gradient-secondary);
     color: var(--white);
-    padding: 8rem 0 4rem;
+    padding: 10rem 0 6rem;
     text-align: center;
 }
 
@@ -1451,7 +1453,7 @@ section {
 
 @media (max-width: 480px) {
     .container {
-        padding: 0 15px;
+        padding: 0 25px;
     }
     
     .hero-content h1 {
@@ -1470,6 +1472,18 @@ section {
     .hero-buttons .btn {
         width: 100%;
         max-width: 250px;
+    }
+    
+    section {
+        padding: 4rem 0;
+    }
+    
+    .hero {
+        padding: 100px 0 60px;
+    }
+    
+    .page-header {
+        padding: 8rem 0 4rem;
     }
 }
 
