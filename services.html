@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Trevorobank</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-university"></i>
+                <span>Trevorobank</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link active">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link login-btn">Login</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content" data-aos="fade-up">
+                <h1>Our Banking Services</h1>
+                <p>Comprehensive financial solutions tailored to your needs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Categories -->
+    <section class="services-categories">
+        <div class="container">
+            <div class="services-nav" data-aos="fade-up">
+                <button class="service-btn active" data-category="personal">Personal Banking</button>
+                <button class="service-btn" data-category="business">Business Banking</button>
+                <button class="service-btn" data-category="loans">Loans & Credit</button>
+                <button class="service-btn" data-category="investments">Investments</button>
+            </div>
+
+            <!-- Personal Banking -->
+            <div class="service-category active" id="personal">
+                <div class="services-grid">
+                    <div class="service-detailed-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon">
+                            <i class="fas fa-piggy-bank"></i>
+                        </div>
+                        <h3>Savings Accounts</h3>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> High-yield interest rates up to 2.5% APY</li>
+                            <li><i class="fas fa-check"></i> No minimum balance requirement</li>
+                            <li><i class="fas fa-check"></i> Free online and mobile banking</li>
+                            <li><i class="fas fa-check"></i> FDIC insured up to $250,000</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Open Account</a>
+                    </div>
+                    <div class="service-detailed-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <h3>Checking Accounts</h3>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> No monthly maintenance fees</li>
+                            <li><i class="fas fa-check"></i> Free debit card with rewards</li>
+                            <li><i class="fas fa-check"></i> Unlimited transactions</li>
+                            <li><i class="fas fa-check"></i> Access to 50,000+ ATMs nationwide</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Open Account</a>
+                    </div>
+                    <div class="service-detailed-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Certificates of Deposit</h3>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Competitive fixed rates</li>
+                            <li><i class="fas fa-check"></i> Terms from 3 months to 5 years</li>
+                            <li><i class="fas fa-check"></i> Guaranteed returns</li>
+                            <li><i class="fas fa-check"></i> Low minimum deposit of $500</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <div class="service-detailed-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Student Accounts</h3>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> No fees for students under 25</li>
+                            <li><i class="fas fa-check"></i> Free financial literacy resources</li>
+                            <li><i class="fas fa-check"></i> Student loan assistance</li>
+                            <li><i class="fas fa-check"></i> Easy account upgrades after graduation</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Open Account</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Banking -->
+            <div class="service-category" id="business">
+                <div class="services-grid">
+                    <div class="service-detailed-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Business Checking</h3>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Multiple account options</li>
+                            <li><i class="fas fa-check"></i> Online business banking</li>
+                            <li><i class="fas fa-check"></i> ACH and wire transfers</li>
+                            <li><i class="fas fa-check"></i> Business debit cards</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Open Account</a>
+                    </div>
+                    <div class="service-detailed-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Merchant Services</h3>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Credit card processing</li>
+                            <li><i class="fas fa-check"></i> Point-of-sale systems</li>
+                            <li><i class="fas fa-check"></i> Online payment solutions</li>
+                            <li><i class="fas fa-check"></i> Competitive processing rates</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <div class="service-detailed-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-icon">
+                            <i class="fas fa-money-check-alt"></i>
+                        </div>
+                        <h3>Payroll Services</h3>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Automated payroll processing</li>
+                            <li><i class="fas fa-check"></i> Tax filing and compliance</li>
+                            <li><i class="fas fa-check"></i> Direct deposit services</li>
+                            <li><i class="fas fa-check"></i> Employee self-service portal</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Get Started</a>
+                    </div>
+                    <div class="service-detailed-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-icon">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </div>
+                        <h3>Cash Management</h3>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Zero balance accounts</li>
+                            <li><i class="fas fa-check"></i> Sweep services</li>
+                            <li><i class="fas fa-check"></i> Lockbox services</li>
+                            <li><i class="fas fa-check"></i> Fraud protection tools</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loans & Credit -->
+            <div class="service-category" id="loans">
+                <div class="services-grid">
+                    <div class="service-detailed-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Home Mortgages</h3>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Competitive rates starting at 6.5%</li>
+                            <li><i class="fas fa-check"></i> First-time buyer programs</li>
+                            <li><i class="fas fa-check"></i> Refinancing options</li>
+                            <li><i class="fas fa-check"></i> Quick pre-approval process</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Apply Now</a>
+                    </div>
+                    <div class="service-detailed-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h3>Auto Loans</h3>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> New and used vehicle financing</li>
+                            <li><i class="fas fa-check"></i> Rates as low as 4.99% APR</li>
+                            <li><i class="fas fa-check"></i> Up to 84-month terms</li>
+                            <li><i class="fas fa-check"></i> Pre-approval available</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Apply Now</a>
+                    </div>
+                    <div class="service-detailed-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-icon">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <h3>Personal Loans</h3>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Unsecured loans up to $50,000</li>
+                            <li><i class="fas fa-check"></i> Fixed rates and payments</li>
+                            <li><i class="fas fa-check"></i> Same-day funding available</li>
+                            <li><i class="fas fa-check"></i> No prepayment penalties</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Apply Now</a>
+                    </div>
+                    <div class="service-detailed-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <h3>Credit Cards</h3>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Rewards and cashback options</li>
+                            <li><i class="fas fa-check"></i> No annual fees</li>
+                            <li><i class="fas fa-check"></i> Competitive APRs</li>
+                            <li><i class="fas fa-check"></i> Fraud protection included</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Investments -->
+            <div class="service-category" id="investments">
+                <div class="services-grid">
+                    <div class="service-detailed-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h3>Investment Planning</h3>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Personalized investment strategies</li>
+                            <li><i class="fas fa-check"></i> Retirement planning services</li>
+                            <li><i class="fas fa-check"></i> Portfolio management</li>
+                            <li><i class="fas fa-check"></i> Regular reviews and adjustments</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Get Started</a>
+                    </div>
+                    <div class="service-detailed-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3>IRAs & 401(k)</h3>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Traditional and Roth IRA options</li>
+                            <li><i class="fas fa-check"></i> Employer-sponsored plans</li>
+                            <li><i class="fas fa-check"></i> Rollover assistance</li>
+                            <li><i class="fas fa-check"></i> Tax-advantaged savings</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <div class="service-detailed-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h3>Mutual Funds</h3>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Diverse fund options</li>
+                            <li><i class="fas fa-check"></i> Professional management</li>
+                            <li><i class="fas fa-check"></i> Low minimum investments</li>
+                            <li><i class="fas fa-check"></i> Automatic investing options</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Explore Funds</a>
+                    </div>
+                    <div class="service-detailed-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Insurance Services</h3>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Life insurance policies</li>
+                            <li><i class="fas fa-check"></i> Disability insurance</li>
+                            <li><i class="fas fa-check"></i> Annuities</li>
+                            <li><i class="fas fa-check"></i> Long-term care coverage</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Ready to Get Started?</h2>
+                <p>Contact our experts today to find the perfect banking solution for your needs.</p>
+                <a href="contact.html" class="btn btn-primary btn-large">Contact Us Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-university"></i>
+                        <span>Trevorobank</span>
+                    </div>
+                    <p>Your trusted financial partner for a secure and prosperous future.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Personal Banking</a></li>
+                        <li><a href="#">Business Banking</a></li>
+                        <li><a href="#">Loans</a></li>
+                        <li><a href="#">Investments</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@trevorobank.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Financial St, City, State 12345</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Trevorobank. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
