@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Trevorobank</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-university"></i>
+                <span>Trevorobank</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link active login-btn">Login</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Section -->
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-form-container" data-aos="fade-up">
+                    <div class="auth-header">
+                        <h1>Welcome Back</h1>
+                        <p>Sign in to your Trevorobank account</p>
+                    </div>
+
+                    <form class="auth-form" id="loginForm">
+                        <div class="form-group">
+                            <label for="loginEmail">Email Address</label>
+                            <input type="email" id="loginEmail" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="loginPassword">Password</label>
+                            <div class="password-input-group">
+                                <input type="password" id="loginPassword" name="password" required>
+                                <button type="button" class="password-toggle" onclick="togglePasswordVisibility('loginPassword')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form-options">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="remember">
+                                <span class="checkmark"></span>
+                                Remember me
+                            </label>
+                            <a href="#" class="forgot-password">Forgot Password?</a>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large auth-btn">Sign In</button>
+                    </form>
+
+                    <div class="auth-divider">
+                        <span>or</span>
+                    </div>
+
+                    <div class="social-login">
+                        <button class="btn btn-social google-btn">
+                            <i class="fab fa-google"></i>
+                            Sign in with Google
+                        </button>
+                        <button class="btn btn-social facebook-btn">
+                            <i class="fab fa-facebook-f"></i>
+                            Sign in with Facebook
+                        </button>
+                    </div>
+
+                    <div class="auth-footer">
+                        <p>Don't have an account? <a href="signup.html">Create one here</a></p>
+                    </div>
+                </div>
+
+                <div class="auth-info" data-aos="fade-left">
+                    <div class="info-content">
+                        <h2>Secure Banking at Your Fingertips</h2>
+                        <ul class="info-features">
+                            <li><i class="fas fa-shield-alt"></i> Bank-level security</li>
+                            <li><i class="fas fa-mobile-alt"></i> Mobile banking app</li>
+                            <li><i class="fas fa-clock"></i> 24/7 customer support</li>
+                            <li><i class="fas fa-chart-line"></i> Investment tools</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-university"></i>
+                        <span>Trevorobank</span>
+                    </div>
+                    <p>Your trusted financial partner for a secure and prosperous future.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Personal Banking</a></li>
+                        <li><a href="#">Business Banking</a></li>
+                        <li><a href="#">Loans</a></li>
+                        <li><a href="#">Investments</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@trevorobank.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Financial St, City, State 12345</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Trevorobank. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
