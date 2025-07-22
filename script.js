@@ -29,6 +29,50 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Single-page navigation
+    const sections = document.querySelectorAll('section[id]');
+    const navLinksAll = document.querySelectorAll('.nav-link[href^="#"]');
+
+    // Update active nav link on scroll
+    function updateActiveNavLink() {
+        let currentSection = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            
+            if (window.pageYOffset >= sectionTop - 200) {
+                currentSection = section.getAttribute('id');
+            }
+        });
+
+        navLinksAll.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${currentSection}`) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    // Smooth scroll for navigation links
+    navLinksAll.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            
+            if (targetSection) {
+                const offsetTop = targetSection.offsetTop - 80; // Account for navbar height
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    window.addEventListener('scroll', updateActiveNavLink);
+
     // Navbar scroll effect
     if (navbar) {
         window.addEventListener('scroll', function() {
